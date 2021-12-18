@@ -1,6 +1,6 @@
 function Get-AllComputeInstances {
   param(
-    [string]$OrganizationId = "332097842545"
+    [string]$OrganizationId = "<org_id>"
   )
   $instances = gcloud asset search-all-resources `
     --asset-types “compute.googleapis.com/Instance” `
